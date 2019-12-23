@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Isaac J. Lee">
+        <meta name="description" content="Ember-D3 Tutorial, in Ember Octane">
+        <meta name="keywords" content="Isaac J. Lee, D3, D3.js, Ember, Ember.js, Ember Octane">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lights Out Tests</title>
+
+        {{content-for "head"}}
+        {{content-for "test-head"}}
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC">
+        <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+        <link rel="stylesheet" href="{{rootURL}}assets/lights-out-octane.css">
+        <link rel="stylesheet" href="{{rootURL}}assets/test-support.css">
+
+        {{content-for "head-footer"}}
+        {{content-for "test-head-footer"}}
+    </head>
+    <body>
+        {{content-for "body"}}
+        {{content-for "test-body"}}
+
+        <script src="/testem.js" integrity=""></script>
+        <script src="{{rootURL}}assets/vendor.js"></script>
+        <script src="{{rootURL}}assets/test-support.js"></script>
+        <script src="{{rootURL}}assets/lights-out-octane.js"></script>
+        <script src="{{rootURL}}assets/tests.js"></script>
+
+        {{content-for "body-footer"}}
+        {{content-for "test-body-footer"}}
+    </body>
+</html>

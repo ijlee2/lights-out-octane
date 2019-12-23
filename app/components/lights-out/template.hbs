@@ -1,0 +1,17 @@
+<div class="lights-out"
+    {{did-insert this.setContainerSize}}
+    {{did-insert this.drawGame}}
+    {{did-insert this.startGame}}
+    {{did-resize this.setContainerSize debounce=25}}
+    {{did-resize this.drawGame debounce=25}}
+>
+    <div class="feedback">
+        {{#if this.areLightsOut}}
+            Congratulations!
+        {{else}}
+            Number of Moves: {{this.numMoves}}
+        {{/if}}
+    </div>
+
+    <div id="game"></div>
+</div>
